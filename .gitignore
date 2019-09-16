@@ -1,0 +1,13 @@
+/wp-admin
+/wp-includes
+/.tmb
+/.quarantine
+
+/wp-content/cache
+/wp-content/plugins
+/wp-content/resources
+/wp-content/uploads
+
+#settings
+wp-config.php
+wp-settings.php
