@@ -40,7 +40,9 @@ if (is_admin_bar_showing()) {
 <?php endif; ?>
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 <?php wp_head(); ?>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 <?php
 	global $LOGO, $metabox_data, $onepage, $fontsizes, $is_redirect, $menutype;

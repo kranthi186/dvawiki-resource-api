@@ -7,3 +7,96 @@ Template: uncode
 Version: 1.0.0
 Text Domain: uncode
 */
+
+.resource-price-wrapper {
+	/*margin-bottom: 20px;*/
+}
+.commodity-prices-wrapper, .dollar-rates-wrapper {
+	padding: 15px 10px !important;
+}
+.commodity-prices-wrapper .row-inner, .dollar-rates-wrapper .row-inner {
+	margin-left: 0;
+	width: 100%;
+}
+.dollar-rates-wrapper .dollar-rates {
+	padding: 7px 0 0 0!important;
+}
+.dollar-rates-wrapper .title {
+	padding: 0!important;
+	width: 120px;
+}
+.dollar-rates-wrapper .title span{
+	margin-left: 2px;
+	background-image: url(//www.exchangeratewidget.com/flag.png);
+    background-position: 0 -1232px;
+    width: 100%;
+    height: 15px;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
+.dollar-rates {
+	margin-top: -30px;
+	padding-left: 120px;
+	visibility: hidden;
+}
+.dollar-rates img {
+	width: 15px;
+	/*height: 15px;*/
+	margin-right: 8px;
+	display: inline-block;
+}
+.dollar-rates span {
+	color: green;
+}
+.dollar-rates .navi {
+	width: 0;
+    height: 0;
+    border-style: solid;
+    margin-top: -15px;
+    margin-left: 5px;
+    display: inline-block;
+}
+.dollar-rates .navi--positive {
+	border-width: 0 5px 10px;
+	border-color: transparent transparent #1ecd93;
+	display: none;
+}
+.dollar-rates .navi--negative {
+	border-width: 10px 5px 0;
+	border-color: #ff433d transparent transparent;
+	display: none;
+}
+
+.slick-initialized .slick-slide {
+	margin-left: 25px;
+}
+
+@media (max-width: 959px) {
+	.commodity-prices-wrapper {
+		text-align: center;
+	}
+	.dollar-rates-wrapper .title {
+		text-align: center;
+		padding-top: 0!important;
+		width: 100%;
+		height: 50px;
+	}
+	.dollar-rates-wrapper .slick-list {
+		margin-top: 10px;
+	}
+}
+
+@media (max-width: 767px) {
+	.commodity-prices-wrapper .title {
+		text-align: center;
+	}
+	.dollar-rates-wrapper .title {
+		text-align: center;
+		padding-top: 0!important;
+		width: 100%;
+		height: 50px;
+	}
+	.dollar-rates-wrapper .slick-list {
+		margin-top: 10px;
+	}
+}

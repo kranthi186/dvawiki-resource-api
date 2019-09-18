@@ -347,6 +347,7 @@ function uncode_equeue()
 	wp_enqueue_script('uncode-init', get_template_directory_uri() . '/library/js/' . $folder . 'init' . $suffix . '.js', array() , $resources_version, false);
 	wp_enqueue_script('uncode-plugins', get_template_directory_uri() . '/library/js/' . $folder . 'plugins' . $suffix . '.js', array('jquery') , $resources_version, true);
 	wp_enqueue_script('uncode-app', get_template_directory_uri() . '/library/js/' . $folder . 'app' . $suffix . '.js', array('jquery') , $resources_version, true);
+	wp_enqueue_script('resources-api', get_template_directory_uri() . '/library/js/' . 'resources-api.js', array() , $resources_version, false);
 
 	wp_localize_script( 'uncode-init', 'SiteParameters', $site_parameters );
 

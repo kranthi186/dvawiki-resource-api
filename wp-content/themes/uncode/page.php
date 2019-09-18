@@ -207,6 +207,58 @@ get_header();
 		}
 		echo '<script type="text/javascript">UNCODE.initHeader();</script>';
 		/** Build breadcrumb **/
+		echo '<div class="resource-price-wrapper vc-row row-container">
+				<div class="row full-width">
+					<div class="row-inner">
+						<div class="col-lg-5 col-md-5 col-sm-12 commodity-prices-wrapper">
+							<div class="row full-width"><div class="row-inner">
+								<div class="col-lg-3 col-md-3 col-sm-12 title">
+									<span>Commodity Prices</span>
+								</div>
+							</div></div>
+						</div>
+						<div class="col-lg-7 col-md-5 col-sm-12 dollar-rates-wrapper">
+							<div class="row full-width"><div class="row-inner">
+								<div class="col-lg-3 col-md-3 col-sm-12 title">
+									<span>US Dollar Exchange Rates</span>
+								</div>
+								<div class="col-lg-9 col-md-9 col-sm-12 font-185210 dollar-rates">
+								    <div>
+								      <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/flags/4x3/eu.svg" />EURO = <span class="euro">0.98</span><span class="navi euro-n navi--positive"></span><span class="navi euro-n navi--negative"></span>
+								    </div>
+								    <div>
+								      <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/flags/4x3/mx.svg" />MXN = <span class="mxn">0.051</span><span class="navi mxn-n navi--positive"></span><span class="navi mxn-n navi--negative"></span>
+								    </div>
+								    <div>
+								      <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/flags/4x3/py.svg" />PYG = <span class="pyg">0.00016</span><span class="navi pyg-n navi--positive"></span><span class="navi pyg-n navi--negative"></span>
+								    </div>
+								    <div>
+								      <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/flags/4x3/in.svg" />INR = <span class="inr">0.014</span><span class="navi inr-n navi--positive"></span><span class="navi inr-n navi--negative"></span>
+								    </div>
+								    <div>
+								      <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/flags/4x3/cn.svg" />CNY = <span class="cny">0.14</span><span class="navi cny-n navi--positive"></span><span class="navi cny-n navi--negative"></span>
+								    </div>
+								    <div>
+								      <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/flags/4x3/br.svg" />BRL = <span class="brl">0.24</span><span class="navi brl-n navi--positive"></span><span class="navi brl-n navi--negative"></span>
+								    </div>
+								    <div>
+								      <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/flags/4x3/ar.svg" />ARS = <span class="ars">0.018</span><span class="navi ars-n navi--positive"></span><span class="navi ars-n navi--negative"></span>
+								    </div>
+								    <div>
+								      <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/flags/4x3/co.svg" />COP = <span class="cop">0.0003</span><span class="navi cop-n navi--positive"></span><span class="navi cop-n navi--negative"></span>
+								    </div>
+								    <div>
+								      <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/flags/4x3/pe.svg" />PEN = <span class="pen">0.30</span><span class="navi pen-n navi--positive"></span><span class="navi pen-n navi--negative"></span>
+								    </div>
+								    <div>
+								      <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/flags/4x3/ua.svg" />UAH = <span class="uah">0.040</span><span class="navi uah-n navi--positive"></span><span class="navi uah-n navi--negative"></span>
+								    </div>
+								</div>
+							</div></div>
+						</div>
+					</div>
+				</div>
+			</div>';
 
 		if ($show_breadcrumb && !is_front_page() && !is_home()) {
 			if ($breadcrumb_align === '') {
