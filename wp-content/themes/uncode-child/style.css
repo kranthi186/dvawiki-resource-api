@@ -19,7 +19,8 @@ Text Domain: uncode
 	width: 100%;
 }
 .dollar-rates-wrapper .dollar-rates {
-	padding: 7px 0 0 0!important;
+	padding: 0!important;
+	font-weight: 500;
 }
 .dollar-rates-wrapper .title {
 	padding: 0!important;
@@ -27,12 +28,12 @@ Text Domain: uncode
 }
 .dollar-rates-wrapper .title span{
 	margin-left: 2px;
-	background-image: url(//www.exchangeratewidget.com/flag.png);
-    background-position: 0 -1232px;
+	background-image: url('https://www.dva.wiki/wp-content/uploads/2019/09/usa-flag.svg');
     width: 100%;
     height: 15px;
     background-repeat: no-repeat;
     padding-left: 30px;
+    font-weight: 500;
 }
 .dollar-rates {
 	margin-top: -30px;

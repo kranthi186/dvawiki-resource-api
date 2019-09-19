@@ -220,7 +220,7 @@ get_header();
 						<div class="col-lg-7 col-md-5 col-sm-12 dollar-rates-wrapper">
 							<div class="row full-width"><div class="row-inner">
 								<div class="col-lg-3 col-md-3 col-sm-12 title">
-									<span>US Dollar Exchange Rates</span>
+									<span>1 US Dollar =</span>
 								</div>
 								<div class="col-lg-9 col-md-9 col-sm-12 font-185210 dollar-rates">
 								    <div>
@@ -252,6 +252,9 @@ get_header();
 								    </div>
 								    <div>
 								      <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/flags/4x3/ua.svg" />UAH = <span class="uah">0.040</span><span class="navi uah-n navi--positive"></span><span class="navi uah-n navi--negative"></span>
+								    </div>
+								    <div>
+								      <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/flags/4x3/za.svg" />ZAR = <span class="zar">0.067</span><span class="navi zar-n navi--positive"></span><span class="navi zar-n navi--negative"></span>
 								    </div>
 								</div>
 							</div></div>

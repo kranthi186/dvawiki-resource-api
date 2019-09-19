@@ -35,13 +35,13 @@ $(document).on('ready', function() {
 			url:"https://data.fixer.io/api/" + dateString,
 			dataType: 'jsonp',
 			type: 'get',
-			data: {access_key: 'a27299ad390418fbaf29697aab91d3f2', base: 'USD', symbols: 'EUR,MXN,PYG,INR,CNY,BRL,ARS,COP,PEN,UAH'},
+			data: {access_key: 'a27299ad390418fbaf29697aab91d3f2', base: 'USD', symbols: 'EUR,MXN,PYG,INR,CNY,BRL,ARS,COP,PEN,UAH,ZAR'},
 			success:function(resp){
 				$.ajax({
 					url:"https://data.fixer.io/api/" + yesterdayString,
 					dataType: 'jsonp',
 					type: 'get',
-					data: {access_key: 'a27299ad390418fbaf29697aab91d3f2', base: 'USD', symbols: 'EUR,MXN,PYG,INR,CNY,BRL,ARS,COP,PEN,UAH'},
+					data: {access_key: 'a27299ad390418fbaf29697aab91d3f2', base: 'USD', symbols: 'EUR,MXN,PYG,INR,CNY,BRL,ARS,COP,PEN,UAH,ZAR'},
 					success:function(yesterdayRES){
 						console.log(resp);
 						$('.dollar-rates .euro').text(resp.rates.EUR.toFixed(2));
@@ -54,6 +54,7 @@ $(document).on('ready', function() {
 						$('.dollar-rates .cop').text(resp.rates.COP.toFixed(2));
 						$('.dollar-rates .pen').text(resp.rates.PEN.toFixed(2));
 						$('.dollar-rates .uah').text(resp.rates.UAH.toFixed(2));
+						$('.dollar-rates .zar').text(resp.rates.ZAR.toFixed(2));
 
 						if (resp.rates.EUR >= yesterdayRES.rates.EUR) {
 							$('.euro-n.navi--negative').css('display', 'inline-block');
@@ -116,6 +117,12 @@ $(document).on('ready', function() {
 						} else {
 							$('.uah-n.navi--negative').css('display', 'inline-block');
 							$('.dollar-rates .uah').css('color', 'red');
+						}
+						if (resp.rates.ZAR >= yesterdayRES.rates.ZAR) {
+							$('.zar-n.navi--positive').css('display', 'inline-block');
+						} else {
+							$('.zar-n.navi--negative').css('display', 'inline-block');
+							$('.dollar-rates .zar').css('color', 'red');
 						}
 
 						$('.dollar-rates').css('visibility', 'visible');
